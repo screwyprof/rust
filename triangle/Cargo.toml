@@ -1,0 +1,6 @@
+[package]
+name = "triangle"
+version = "0.1.0"
+authors = ["Max O'Donnell <screwyprof@gmail.com>"]
+
+[dependencies]
