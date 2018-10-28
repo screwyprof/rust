@@ -7,7 +7,7 @@ use triangle::{
     calc_square, is_right_triangle,
 };
 
-fn read_leg(msg: std::string::String) -> f32 {
+fn read_leg(msg: &str) -> f32 {
     print!("{}", msg);
     stdout().flush().unwrap();
 
@@ -20,8 +20,8 @@ fn read_leg(msg: std::string::String) -> f32 {
 }
 
 fn main() {
-    let a = read_leg("a = ".to_string());
-    let b = read_leg("b = ".to_string());
+    let a = read_leg("a = ");
+    let b = read_leg("b = ");
 
     let c = calc_c_side(a, b);
     if !is_right_triangle(a, b, c) {
